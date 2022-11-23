@@ -11,3 +11,13 @@ The script will also prompt for the password for the `patstat` postgresql user.
 By default, a `patstat` user and database is assumed, and data is loaded into
 the `public` schema. The script assumes that the postgresql database is running
 on localhost.
+
+## HOWTO
+
+1. Run the `insert_data_to_patstat.sh` shell script. Enter the values as
+   prompted. The script will create the schema and load the data from the CSV
+   files, and then create rudimentary indexes. The script may run for a few
+   hours.
+2. Run the `count_rows_in_patstat` script. This script will count the rows in
+   each patstat table. Compare those with the values provided in the EPO dump,
+   under the `TestScripts` directory to verify that the database is complete.
