@@ -21,3 +21,10 @@ on localhost.
 2. Run the `count_rows_in_patstat` script. This script will count the rows in
    each patstat table. Compare those with the values provided in the EPO dump,
    under the `TestScripts` directory to verify that the database is complete.
+
+## Reference
+
+The ERD for this database structure matches that given in the EPO data
+catalogue, included here for reference:
+
+![EPO PATSTAT ERD](./resources/patstat_erd.png)
