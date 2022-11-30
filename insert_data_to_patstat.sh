@@ -21,6 +21,7 @@ fi
 
 read -e -p "Enter the path to the csv files, excluding the trailing slash: " CSV_FILES_DIR
 read -s -p "Enter the password for the patstat postgresql user: " PGPASSWORD
+export PGPASSWORD=$PGPASSWORD
 
 # list of tables to be filled
 table_list="
@@ -55,7 +56,7 @@ tls902_ipc_nace2
 tls904_nuts"
 
 # creating tables within the PATSTAT database
-psql -h localhost -U patstat patstat < ./create_patstat_tables.sql
+psql -w -h localhost -U patstat patstat < ./create_patstat_tables.sql
 
 for table_name in $table_list
 do
@@ -67,13 +68,14 @@ do
    # for files starting tlsXXX_partXXX.csv
    for file in "$CSV_FILES_DIR/"$base_name*
    do
-       psql -h localhost -U patstat -c "\COPY $table_name from '$file' DELIMITER AS ',' CSV HEADER QUOTE AS '\"' " patstat
+       psql -w -h localhost -U patstat -c "\COPY $table_name from '$file' DELIMITER AS ',' CSV HEADER QUOTE AS '\"' " patstat
        echo "INSERTED $file"
        echo " "
    done
 done
 
 echo "creating indexes and keys, it will take very long hours, don't despair :)"
-psql -h localhost -U patstat patstat < ./create_patstat_keys.sql 
+psql -w -h localhost -U patstat patstat < ./create_patstat_keys.sql 
 
 echo "The script has finished."
+export PGPASSWORD=
