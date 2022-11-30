@@ -15,8 +15,10 @@ on localhost.
 ## Release coverage
 
 This repository contains scripts tested for the following PATSTAT versions (see the releases in this repository for corresponding versions):
-* Spring 2022 (note that a point release is available for this version to fix a bug in the shell scripts)
+* Spring 2022*
 * Fall 2022
+
+Releases marked with an asterisk have one or more point releases available for bugfixes. Always use the latest release for your version of PATSTAT.
 
 ## HOWTO
 
