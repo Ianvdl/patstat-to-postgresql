@@ -3,6 +3,7 @@
 
 IFS=$'\n'
 read -s -p "Enter the password for the patstat postgresql user: " PGPASSWORD
+export PGPASSWORD=$PGPASSWORD
 
 # row count for each table documented by EPO in text file located at /CreateScripts/
 
@@ -40,9 +41,10 @@ tls904_nuts"
 for i in ${table_name_count}
 do
     table_name=`echo $i | cut -f1 -d" "`
-    db_count=`psql -U patstat -h localhost -t -c "SELECT count(*) FROM $table_name" patstat`
+    db_count=`psql -w -U patstat -h localhost -t -c "SELECT count(*) FROM $table_name" patstat`
 
     echo "table_name = $table_name, db_count = $db_count"
     echo " "
 
 done
+export PGPASSWORD=
