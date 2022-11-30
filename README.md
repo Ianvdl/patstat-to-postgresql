@@ -12,6 +12,12 @@ By default, a `patstat` user and database is assumed, and data is loaded into
 the `public` schema. The script assumes that the postgresql database is running
 on localhost.
 
+## Release coverage
+
+This repository contains scripts tested for the following PATSTAT versions (see the releases in this repository for corresponding versions):
+* Spring 2022 (note that a point release is available for this version to fix a bug in the shell scripts)
+* Fall 2022
+
 ## HOWTO
 
 1. Run the `insert_data_to_patstat.sh` shell script. Enter the values as
