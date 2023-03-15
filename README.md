@@ -26,7 +26,7 @@ Releases marked with an asterisk have one or more point releases available for b
    prompted. The script will create the schema and load the data from the CSV
    files, and then create rudimentary indexes. The script may run for a few
    hours.
-2. Run the `count_rows_in_patstat` script. This script will count the rows in
+2. Run the `count_rows_in_patstat.sh` script. This script will count the rows in
    each patstat table. Compare those with the values provided in the EPO dump,
    under the `TestScripts` directory to verify that the database is complete.
 
