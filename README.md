@@ -20,6 +20,10 @@ This repository contains scripts tested for the following PATSTAT versions (see 
 
 Releases marked with an asterisk have one or more point releases available for bugfixes. Always use the latest release for your version of PATSTAT.
 
+### Help needed
+
+If you have access to the Spring 2023 version of the datadump, please respond to the open issue to indicate whether the Fall 2022 release works, or whether changes are needed.
+
 ## HOWTO
 
 1. Run the `insert_data_to_patstat.sh` shell script. Enter the values as
