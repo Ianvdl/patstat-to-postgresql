@@ -16,7 +16,7 @@ on localhost.
 
 This repository contains scripts tested for the following PATSTAT versions (see the releases in this repository for corresponding versions):
 * Spring 2022*
-* Fall 2022
+* Fall 2022*
 
 Releases marked with an asterisk have one or more point releases available for bugfixes. Always use the latest release for your version of PATSTAT.
 
