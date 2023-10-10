@@ -19,7 +19,7 @@ CREATE TABLE tls201_appln (
     earliest_publn_year smallint DEFAULT 9999 NOT NULL,
     earliest_pat_publn_id integer DEFAULT 0 NOT NULL,
     granted char(1) DEFAULT 'N' NOT NULL,
-    doc_db_family_id integer DEFAULT 0 NOT NULL,
+    docdb_family_id integer DEFAULT 0 NOT NULL,
     inpadoc_family_id integer DEFAULT 0 NOT NULL,
     docdb_family_size smallint DEFAULT 0 NOT NULL,
     nb_citing_docdb_fam smallint DEFAULT 0 NOT NULL,
