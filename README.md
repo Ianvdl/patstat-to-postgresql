@@ -23,7 +23,12 @@ Releases marked with an asterisk have one or more point releases available for b
 
 ### Help needed
 
-If you have access to the Spring 2023 version of the datadump, please respond to the open issue to indicate whether the Fall 2022 release works, or whether changes are needed.
+If you have access to the versions of the data for which we do not yet have coverage, please respond to the open issue to indicate whether the release works, or whether changes are needed. If you are able, please submit a pull request with the changes needed for compatibility.
+
+Many thanks to the contributors who have donated their time and expertise to this project (in sequential order):
+
+1. @complexly (spelling error fix)
+2. @vlejd (fall 2023 version)
 
 ## HOWTO
 
