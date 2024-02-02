@@ -5,6 +5,7 @@ CREATE TABLE tls201_appln (
     appln_kind char(2) DEFAULT '' NOT NULL,
     appln_filing_date date DEFAULT '9999-12-31' NOT NULL,
     appln_filing_year smallint DEFAULT '9999' NOT NULL,
+    appln_nr_epodoc varchar(20) DEFAULT '' NOT NULL,
     appln_nr_original varchar(100) DEFAULT '' NOT NULL,
     ipr_type char(2) DEFAULT '' NOT NULL,
     receiving_office char(2) DEFAULT '' NOT NULL,
@@ -277,7 +278,7 @@ CREATE TABLE tls231_inpadoc_legal_event (
 
 CREATE TABLE tls801_country (
     ctry_code char(2) DEFAULT '' NOT NULL,
-    iso_alph3 varchar(3) DEFAULT '' NOT NULL,
+    iso_alpha3 varchar(3) DEFAULT '' NOT NULL,
     st3_name varchar(100) DEFAULT '' NOT NULL,
     organisation_flag char(1) DEFAULT '' NOT NULL,
     continent varchar(25) DEFAULT '' NOT NULL,
