@@ -45,6 +45,7 @@ Many thanks to the contributors who have donated their time and expertise to thi
 ## Reference
 
 The ERD for this database structure matches that given in the EPO data
-catalogue, included here for reference (note that the fields `APPLN_NR_EPODOC` in `TLS201_APPLN` and `EVENT_IMPACT` in `TLS803_LEGAL_EVENT_CODE` have been removed from Fall 2022 onwards, but the Spring 2022 ERD is kept here, since the ERD provided in the data catalog for that version is higher resolution):
+catalogue, included here for reference:
 
-![EPO PATSTAT ERD](./resources/patstat_erd.png)
+![patstat-erd](https://github.com/user-attachments/assets/3d4dbe0f-d0f2-4ef7-a533-55767c92e8e0)
+
