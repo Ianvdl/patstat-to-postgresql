@@ -18,6 +18,7 @@ This repository contains scripts tested for the following PATSTAT versions (see 
 * Spring 2022*
 * Fall 2022*
 * Fall 2023
+* Spring 2024
 
 Releases marked with an asterisk have one or more point releases available for bugfixes. Always use the latest release for your version of PATSTAT.
 
@@ -29,6 +30,7 @@ Many thanks to the contributors who have donated their time and expertise to thi
 
 1. @complexly (spelling error fix)
 2. @vlejd (fall 2023 version)
+3. 2. @vlejd (spring 2024 version)
 
 ## HOWTO
 
